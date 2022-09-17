@@ -1,0 +1,44 @@
+@use "abstracts" as *;
+
+.btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-pink);
+    border-radius: 2rem;
+    text-transform: capitalize;
+
+    &--primary {
+        background-color: var(--primary-pink);
+        color: var(--secondary-very-pale-blue);
+        padding: 1rem 3rem;
+        font-weight: 700;
+        box-shadow: 0 2px 5px 3px var(--secondary-shadow-gray);
+
+        &:hover {
+            color: var(--primary-light-pink);
+            background-color: var(--primary-light-pink);
+        }
+    }
+
+    &--secondary {
+        padding: 0.5rem 1.5rem;
+        color: var(--primary-pink);
+        font-size: var(--fs-mini);
+        transition: ease 0.3s all;
+
+        &:hover {
+            background-color: var(--primary-light-pink);
+        }
+    }
+
+    &--tertiary {
+        padding: 0.8rem 2.5rem;
+        border-radius: 5px;
+        background-color: var(--primary-pink);
+        color: var(--secondary-white);
+        font-weight: bold;
+
+        &:hover {
+            background-color: var(--primary-light-pink);
+        }
+    }
+}

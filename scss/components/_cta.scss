@@ -1,0 +1,23 @@
+.cta {
+    text-align: center;
+    margin: 0 auto;
+    padding: 6rem 2rem 6rem;
+    background-color: var(--secondary-white);
+
+    &__content {
+        margin-bottom: 6rem;
+        &__info {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &--simple {
+        padding: 6rem 2rem 12rem;
+        &__content {
+            margin: 0;
+            &__heading {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

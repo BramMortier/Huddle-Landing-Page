@@ -1,0 +1,12 @@
+header,
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--secondary-white);
+
+    &__logo-container {
+        width: 120px;
+    }
+}

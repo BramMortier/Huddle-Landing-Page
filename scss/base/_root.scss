@@ -1,0 +1,13 @@
+@use "abstracts" as *;
+
+:root {
+    @each $importance, $colors in $colormap {
+        @each $color, $value in $colors {
+            --#{$importance}-#{$color}: #{$value};
+        }
+    }
+
+    @each $fontsize, $value in $typescale {
+        --fs-#{$fontsize}: #{$value};
+    }
+}

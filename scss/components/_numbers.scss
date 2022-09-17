@@ -1,0 +1,16 @@
+.numbers {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--secondary-white);
+
+    &__card {
+        text-align: center;
+        img {
+            width: 40px;
+        }
+    }
+}

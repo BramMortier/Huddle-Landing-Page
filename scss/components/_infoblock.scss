@@ -1,0 +1,13 @@
+.infoblock {
+    padding: 6rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+
+    &--white {
+        background-color: var(--secondary-white);
+    }
+
+    &__image {
+        margin-bottom: 4rem;
+    }
+}
