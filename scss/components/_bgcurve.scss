@@ -1,7 +1,23 @@
+@use "abstracts" as *;
+
 .bgcurve {
     background-color: var(--secondary-white);
 
     img {
         vertical-align: top;
+    }
+
+    .desktop-version {
+        display: none;
+        @include breakpoint(tablet) {
+            display: initial;
+        }
+    }
+
+    .mobile-version {
+        display: initial;
+        @include breakpoint(tablet) {
+            display: none;
+        }
     }
 }

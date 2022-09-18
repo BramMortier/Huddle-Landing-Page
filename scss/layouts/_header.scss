@@ -1,3 +1,5 @@
+@use "abstracts" as *;
+
 header,
 .header {
     display: flex;
@@ -6,7 +8,15 @@ header,
     padding: 2rem;
     background-color: var(--secondary-white);
 
+    @include breakpoint(tablet) {
+        padding: 4rem;
+    }
+
     &__logo-container {
         width: 120px;
+
+        @include breakpoint(tablet) {
+            width: 220px;
+        }
     }
 }

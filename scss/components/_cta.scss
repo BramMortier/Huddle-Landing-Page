@@ -1,13 +1,30 @@
+@use "abstracts" as *;
+
 .cta {
     text-align: center;
     margin: 0 auto;
     padding: 6rem 2rem 6rem;
+    max-width: 65rem;
     background-color: var(--secondary-white);
+
+    @include breakpoint(tablet) {
+        padding: 8rem 2rem 6rem;
+    }
 
     &__content {
         margin-bottom: 6rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 8rem;
+        }
+
         &__info {
             margin-bottom: 3rem;
+
+            @include breakpoint(tablet) {
+                max-width: 40rem;
+                margin: 0 auto 3rem;
+            }
         }
     }
 
