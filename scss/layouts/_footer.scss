@@ -1,8 +1,18 @@
+@use "abstracts" as *;
+
 footer,
 .footer {
     background-color: var(--secondary-very-dark-cyan);
     padding: 3rem 2rem;
     color: var(--secondary-white);
+
+    @include breakpoint(desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6rem 6rem;
+        gap: 20%;
+    }
 
     &__newsletter {
         margin-bottom: 6rem;

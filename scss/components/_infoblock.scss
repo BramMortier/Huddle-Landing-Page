@@ -1,7 +1,42 @@
+@use "abstracts" as *;
+
 .infoblock {
     padding: 6rem 2rem;
     margin: 0 auto;
-    text-align: center;
+
+    &--swapped {
+        @include breakpoint(tablet) {
+            flex-direction: row !important;
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+    img {
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+
+        @include breakpoint(desktop) {
+            padding: 4rem;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6rem;
+        padding: 2rem 6rem;
+    }
 
     &--blue {
         background-color: var(--secondary-very-pale-blue);

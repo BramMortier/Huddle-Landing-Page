@@ -1,3 +1,5 @@
+@use "abstracts" as *;
+
 .numbers {
     margin: 0 auto;
     display: flex;
@@ -5,12 +7,24 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    max-width: 65rem;
+    width: 100%;
+    margin-bottom: 4rem;
     background-color: var(--secondary-white);
+
+    @include breakpoint(tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     &__card {
         text-align: center;
         img {
             width: 40px;
+
+            @include breakpoint(tablet) {
+                width: 50px;
+            }
         }
     }
 }

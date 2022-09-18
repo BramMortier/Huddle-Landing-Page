@@ -28,6 +28,15 @@ h2,
 
     &--number {
         font-size: var(--fs-700);
+
+        @include breakpoint(tablet) {
+            font-size: var(--fs-800);
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        font-size: var(--fs-500);
     }
 }
 
@@ -35,8 +44,13 @@ h3,
 .heading-3 {
     font-size: var(--fs-300);
     margin-bottom: 1rem;
+
     &--upper {
         text-transform: uppercase;
+    }
+
+    @include breakpoint(tablet) {
+        font-size: var(--fs-400);
     }
 }
 
